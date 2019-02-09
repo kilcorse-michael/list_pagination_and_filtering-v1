@@ -72,16 +72,20 @@ const appendPageLinks = () => {
 //for loop creating buttons
 for(let i = 0; i < numberOfPages; i++){
   const pageButtons = document.createElement("button");
+
+  pageButtons.className = ".pagination"
   pageButtons.textContent = i + 1;
   pageDiv.appendChild(pageButtons);
   pageButtons.addEventListener("click" , () => {
-    page = pageButtons.textContent;
-    showPage(listStudentLi, page);
+    page = pageButtons.textContent - 1;
+
+      showPage(listStudentLi, page);
   });
-}
 
 }
 
+}
+showPage(listStudentLi, 0);
 appendPageLinks();
 
 

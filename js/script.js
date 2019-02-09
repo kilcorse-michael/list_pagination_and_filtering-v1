@@ -63,7 +63,7 @@ const appendPageLinks = () => {
                   page = parseInt(pageA.textContent - 1);
 
                   showPage(listStudentLi, page);
-                  
+
         });
       }
    }
@@ -73,4 +73,4 @@ showPage(listStudentLi, 0);
 appendPageLinks();
 
 
-// Remember to delete the comments that came with this file, and replace them with your own code comments.
+//issues: only the first and last pagination <a> tag works; when 2-5 is clicked the appendPageLinks fails to write add links

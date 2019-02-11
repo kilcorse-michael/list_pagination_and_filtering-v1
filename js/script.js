@@ -1,3 +1,5 @@
+//Unit 2 List pagination project- Michael Kilcorse
+
 //Global scope variables
 const listStudentLi = document.getElementsByClassName("student-item cf");
 const ulStudentList = document.querySelector(".student-list");

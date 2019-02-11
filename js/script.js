@@ -6,16 +6,6 @@ const studentsPerPage = 10;
 const pageDiv = document.querySelector("div.page");
 const headerDiv = document.querySelector("div.page-header cf");
 
-const insertSearch = (list) => {
-    const searchbar = document.createElement("input");
-    const searchButton = document.createElement("button");
-    searchbar.type = "text";
-    searchbar.textContent = "Search Student List Here";
-    headerDiv.appendChild(searchbar);
-    headerDiv.appendChild(searchButton);
-
-}
-
 
 // the function to show only ten students per page with parameters list and showPage
 const showPage = (list, page) => {
@@ -63,6 +53,5 @@ const appendPageLinks = (list) => {
       }
    }
 
-insertSearch();
 showPage(listStudentLi, 0);
 appendPageLinks(listStudentLi);

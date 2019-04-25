@@ -1,5 +1,16 @@
+header{
+  text-align: center;
+  float: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: lightblue;
+  text-shadow: 2px 2px grey;
+
+}
+
 body{
-  background-color: #e1f1f6;
+  background-color: lightseagreen;
   font-family: Helvetica, sans-serif;
   color: #222;
 }
@@ -7,8 +18,9 @@ body{
 .page{
   margin: 50px auto;
   width: 70%;
-  background-color: #fff;
+  background-color: lightblue;
   border-radius: 5px;
+  box-shadow: 5px 10px #888888;
   padding: 50px;
 }
 
@@ -47,8 +59,11 @@ body{
 
   .student-item{
     margin: 0 0 20px 0;
-    padding: 0 0 20px 0;
-    border-bottom: 1px solid #eaeaea;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #lightseagreen;
+    box-shadow: 5px 10px #888888;
+    background-color: violet;
+    border-radius: 15px
   }
 
     .student-details{
@@ -67,11 +82,11 @@ body{
       .student-details h3{
         margin: 4px 0 2px 0;
         font-weight: bold;
-        color: #4ba6c3;
+        color: black;
       }
 
       .student-details .email{
-        color: #888;
+        color: lightyellow;
         font-size: 14px;
       }
 
@@ -86,7 +101,7 @@ body{
         margin-top: 15px;
         display: block;
         font-size: 14px;
-        color: #999;
+        color: lightyellow;
       }
 
   .student-item:last-child{
@@ -99,7 +114,7 @@ body{
   margin: 40px 0 0 0;
   text-align: center;
 }
- 
+
   .pagination li{
     display: inline;
   }
@@ -109,7 +124,8 @@ body{
       border-radius: 5px;
       padding: 3px 8px;
       text-decoration: none;
-      color: #4ba6c3;
+      color: lightyellow;
+      background-color: lightseagreen;
     }
 
     .pagination li a.active,
